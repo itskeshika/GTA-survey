@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA Survey Form</title>
+    <link href="styles.css" rel="stlesheet">
+</head>
+
+<body>
+    <h1 id="title">GTA Survey Form</h1>
+    <p>Let's Know how much of a GTA fan are you.</p>
+    <form id="survey-from">
+        <fieldset>
+            <label for="name">Enter Your Name:
+                <input type="text" name="name" id="name" required>
+            </label>
+            <label for="gaming-name"> Enter Your Gaming Name:
+                <input id="gaming-name" type="text" name="gaming-name" required>
+            </label>
+            <label for="age">Enter your age:
+                <input id="age" type="number" name="age" min="18" max="120" required>
+            </label>
+            <label for="email">Enter Your E-mail:
+                <input type="email" name="email" id="email" required>
+            </label>
+            <label for="password">Create a new-password:
+                <input type="password" name="password" id="password" pattern="[a-z0-5]{8,}" required>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Who was your favourite character in GTA 5 ?
+                <label for="michael"><input id="michael" type="radio" name="michael-trevor-franklin" class="inline"
+                        value="michael" checked>Michael Townley</label>
+                <laber for="trevor"><input id="trevor" type="radio" name="michael-trevor-franklin" class="inline"
+                        value="trevor">Trevor Philips</laber>
+                <label for="franklin"><input id="franklin" type="radio" name="michael-trevor-franklin" value="franklin"
+                        class="inline">Franklin Clinton</label>
+
+                <label for="fav-character">Who was your favourite character in all GTA ?
+                    <input type="text" name="fav-character" id="fav-character" placeholder="you may include any protagonist and villian">
+                </label>
+            </label>
+
+            <label for="referrer">
+                Which map did you liked the most ?
+                <select id="referrer" name="referrer">
+                    <option value="">(select one)</option>
+                    <option value="1">Cayo Perico</option>
+                    <option value="2">San Andreas</option>
+                    <option value="3">Los Santos</option>
+                    <option value="4">San Fierro</option>
+                    <option value="5">Las Venturas</option>
+                    <option value="6">Blaine country</option>
+                    <option value="7">Liberty city</option>
+                    <option value="8">Alderny</option>
+                    <option value="9">Miami</option>
+
+                </select>
+
+            </label>
+
+            <label>
+                Which GTA game did you play first ?
+                <label for="vice-city">
+                    <input type="radio" name="vice-city-san-andreas-gta-3-liberty-city-gta-5" id="vice-city" class="inline" checked>GTA Vice-City
+                </label>
+
+                <label for="san-andreas">
+                    <input type="radio" name="vice-city-san-andreas-gta-3-liberty-city-gta-5" id="san-andreas" class="inline">San-andreas
+                </label>
+                <label for="GTA-3">
+                    <input type="radio" name="vice-city-san-andreas-gta-3-liberty-city-gta-5" id="GTA-3" class="inline"> GTA-3
+                </label>
+                <label for="liberty-city">
+                    <input type="radio" name="vice-city-san-andreas-gta-3-liberty-city-gta-5" id="liberty-city" class="inline">Liberty-city
+                </label>
+                <label for="gta-5">
+                    <input type="radio" name="vice-city-san-andreas-gta-3-liberty-city-gta-5" id="gta-5" class="inline">GTA-5
+                </label>
+
+
+            </label>
+
+            <label for="hero">
+                Which hero would you want to be in GTA world?
+                <input type="text " name="hero" id="hero">
+            </label>
+
+            <label for="world">
+                What would you do if you were that hero ?
+                <input type="text" name="world" id="world">
+            </label>
+
+           </fieldset>
+        <fieldset>
+            <label for="profile-picture">
+                Upload a profile-picture:
+                <input type="file" id="profile-picture" name="file">
+            </label>
+
+            <label for="bio">
+                provide a bio:
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like GTA games because....">
+                </textaera>
+            </label>
+        </fieldset>
+        
+        <input type="submit" value="submit">
+    </form>
+
+</body>
+
+</html>
